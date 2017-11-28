@@ -1,6 +1,6 @@
 # zerobounce-python-api
 
-[ZeroBounce](https://zerobounce.net "Zerobounce Homepage") Python API
+[ZeroBounce](https://www.zerobounce.net "Zerobounce Homepage") Python API
 
 
 ```python
