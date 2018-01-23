@@ -1,7 +1,7 @@
 zerobounce-python-api
 =====================
 
-`ZeroBounce <https://www.zerobounce.net>`__ Python API
+`ZeroBounce <https://www.zerobounce.net>`__ Python API.
 The response object allows an attribute-like style access.
 
 
