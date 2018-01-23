@@ -1,4 +1,4 @@
-
+from .mini_attr_dict import AttrDict
 import requests
 
 class ZeroBounceAPI(object):
@@ -30,7 +30,7 @@ class ZeroBounceAPI(object):
         Args:
             email (str): A syntactically valid email address"""
 
-        return requests.get("%s/%s" % (self.url, "validate"), params={"email": email, "apikey": self.apikey}).json()
+        return AttrDict(requests.get("%s/%s" % (self.url, "validate"), params={"email": email, "apikey": self.apikey}).json())
 
     def validatewithip(self, email, ipaddress="99.123.12.122"):
         """Get the validation result for one email address, using an IP.
@@ -43,4 +43,4 @@ class ZeroBounceAPI(object):
             email (str): A syntactically valid email address
             ipaddress (str, optional): Specify an IP Address to use (advanced)."""
 
-        return requests.get("%s/%s" % (self.url, "validatewithip"), params={"email": email, "apikey": self.apikey, "ipaddress": ipaddress}).json()
+        return AttrDict(requests.get("%s/%s" % (self.url, "validatewithip"), params={"email": email, "apikey": self.apikey, "ipaddress": ipaddress}).json())
