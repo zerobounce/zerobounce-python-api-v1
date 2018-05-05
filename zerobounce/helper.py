@@ -1,6 +1,7 @@
 from .mini_attr_dict import AttrDict
 import requests
 
+
 class ZeroBounceAPI(object):
     """ Main object used for creating a connection to the ZeroBounce API."""
 
