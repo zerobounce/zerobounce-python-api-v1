@@ -1,19 +1,19 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+
 from distutils.core import setup
-
-
-with open('requirements.txt') as fp:
-    reqs = fp.read()
+import pypandoc
 
 setup(
     name='zerobounce',
-    version='0.1',
+    version='0.1.4',
     description='ZeroBounce Python API - https://www.zerobounce.net.',
-    author='<Author>',
-    author_email='<author email>',
+    author='Tudor Aursulesei',
+    author_email='tudor@zerobounce.net',
     url='http://github.com/zerobounce/zerobounce-python-api',
-    install_requires=reqs,
+    long_description = pypandoc.convert("README.md", "rst"),
+    download_url = 'https://github.com/zerobounce/zerobounce-python-api/archive/0.1.4.tar.gz', # I'll explain this in a second
+    keywords = ['email', 'validation'], # arbitrary keywords
     packages=[
         'zerobounce',
     ],
