@@ -1,4 +1,3 @@
-
 # https://stackoverflow.com/a/45698519
 class AttrDict(dict):
     def __init__(self, d):
