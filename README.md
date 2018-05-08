@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/riquellopes/zerobounce-python-api.svg?branch=master)](https://travis-ci.org/riquellopes/zerobounce-python-api)
 # zerobounce-python-api
 
 [ZeroBounce](https://www.zerobounce.net "Zerobounce Homepage") Python API.
