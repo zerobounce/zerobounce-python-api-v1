@@ -1,8 +1,8 @@
 PIP=.venv/bin/pip
 PYTEST=.venv/bin/pytest
 
-test:
-	${PYTEST}
+test:clean
+	PYTHONPATH=zeroubouce ${PYTEST} -s -v tests
 
 venv:
 	virtualenv .venv --python=python2.7
